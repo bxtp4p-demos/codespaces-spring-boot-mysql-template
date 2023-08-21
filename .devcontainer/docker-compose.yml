@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/universal:2
+    volumes:
+      - ../..:/workspaces:cached
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+    command: sleep infinity
+    depends_on: 
+      - db
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: demo
+      MYSQL_PASSWORD: demo
+      MYSQL_DATABASE: demo
+    ports:
+      - 8080
+      - 3000
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_USER: demo
+      MYSQL_PASSWORD: demo
+      MYSQL_DATABASE: demo
+      MYSQL_ROOT_PASSWORD: demo
+    ports:
+      - 3306:3306
