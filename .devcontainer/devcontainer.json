@@ -37,7 +37,8 @@
 				"vscjava.vscode-sp",
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"cweijan.vscode-mysql-client2"
 			]
 		}
 	},
