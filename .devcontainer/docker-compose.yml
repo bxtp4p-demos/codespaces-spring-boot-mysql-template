@@ -17,7 +17,6 @@ services:
       MYSQL_DATABASE: demo
     ports:
       - 8080
-      - 3000
   db:
     image: mysql:latest
     restart: always

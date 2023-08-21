@@ -18,6 +18,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"redhat.java",
 				"vscjava.vscode-java-pack",
 				"redhat.vscode-xml",
 				"ms-azuretools.vscode-docker",
@@ -36,12 +37,20 @@
 				"vscjava.vscode-sp",
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
-				"esbenp.prettier-vscode",
-				"redhat.java"
-		,
+				"esbenp.prettier-vscode"
+			]
+		}
+	},
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [8080],
+
+	"portsAttributes": {
+		"8080": {
+			"label": "Application",
+			"onAutoForward": "notify"
+		}
+	}
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
