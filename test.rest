@@ -1,0 +1,28 @@
+GET http://localhost:8080/todos
+
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+      
+      "title": "Learn Java",
+      "description": "Learn Java",
+      "completed": false
+
+}
+
+GET http://localhost:8080/todos/1
+
+PUT http://localhost:8080/todos/1
+Content-Type: application/json
+
+{
+      
+      "title": "Learn Java",
+      "description": "Learn Java",
+      "completed": true
+
+}
+
+DELETE http://localhost:8080/todos/1
+

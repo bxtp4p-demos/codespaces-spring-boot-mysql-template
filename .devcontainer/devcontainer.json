@@ -22,9 +22,6 @@
 				"vscjava.vscode-java-pack",
 				"redhat.vscode-xml",
 				"ms-azuretools.vscode-docker",
-				"ms-vscode.azure-account",
-				"ms-vscode.azurecli",
-				"ms-vscode.powershell",
 				"ms-vscode.wordcount",
 				"redhat.vscode-yaml",
 				"vscjava.vscode-java-debug",
@@ -35,8 +32,6 @@
 				"vscjava.vscode-spring-boot-dashboard",
 				"vscjava.vscode-spring-initializr",
 				"vscjava.vscode-sp",
-				"GitHub.copilot",
-				"GitHub.copilot-chat",
 				"esbenp.prettier-vscode",
 				"cweijan.vscode-mysql-client2"
 			]
