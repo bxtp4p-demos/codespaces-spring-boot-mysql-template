@@ -38,4 +38,4 @@ java -jar -Dspring.profiles.active=mysql target/app-0.0.1-SNAPSHOT.jar
 
 ## How to test
 
-Swagger UI is available. Due to a [known issue](https://github.com/orgs/community/discussions/15351#discussioncomment-4112535) with Codespaces port visibility and CORS, you will need to open this codespace in VS Code. Once you've done that and started the app, you can access Swagger UI at http://localhost:8080/swagger-ui/index.html.
+Swagger UI is available. Due to a [known issue](https://github.com/orgs/community/discussions/15351#discussioncomment-4112535) with Codespaces port visibility and CORS, you will need to open this codespace in VS Code Desktop. Once you've done that and started the app, you can access Swagger UI at http://localhost:8080/swagger-ui/index.html.
